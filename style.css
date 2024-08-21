@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+.my-cat-img {
+    border-radius: 50%;
+}
+
 .profile-container {
     text-align: center;
     padding: 20px;
