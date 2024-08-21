@@ -1,4 +1,5 @@
 body {
+    overflow: hidden;
     background-color: #000; /* خلفية سوداء */
     color: #fff; /* نص أبيض */
     font-family: 'Arial', sans-serif;
