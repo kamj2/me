@@ -1,6 +1,6 @@
 body {
     background-color: #000;
-    color: #fff;
+    color: #fff; 
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,18 +8,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-shadow: 0 0 4px white;
 }
 
 .profile-container {
     text-align: center;
     padding: 20px;
+    max-width: 90%;
+    margin: auto;
 }
 
 .profile-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    border: 5px solid #444;
+    box-shadow: 0 0 15px white;
+    border: 5px solid #bbb;
     margin-bottom: 20px;
 }
 
@@ -37,15 +41,74 @@ h1 {
     margin: 0;
 }
 
-.my-cat-img {
-    border-radius: 50%;
+.skills-container {
+    margin-top: 30px;
+    text-align: left;
 }
 
-@media (max-width: 600px) {
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 15px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 4px;
+}
+
+footer {
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .gradient-text {
+        font-size: 16px;
+    }
+
+    .skill span {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
     .profile-container {
         padding: 15px;
     }
-    
+
     .profile-image {
         width: 100px;
         height: 100px;
@@ -58,23 +121,16 @@ h1 {
     .gradient-text {
         font-size: 14px;
     }
-}
 
-@media (max-width: 400px) {
-    .profile-container {
-        padding: 10px;
+    .skill span {
+        font-size: 12px;
     }
 
-    .profile-image {
-        width: 80px;
-        height: 80px;
+    .progress-bar {
+        height: 10px;
     }
 
-    h1 {
-        font-size: 16px;
-    }
-
-    .gradient-text {
+    footer {
         font-size: 12px;
     }
 }
