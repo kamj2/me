@@ -31,6 +31,15 @@ h1 {
     margin: 0;
 }
 
+.gradient-text {
+    background: linear-gradient(to right, red, blue);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin: 0;
+}
+
 .skills-container {
     margin-top: 30px;
     text-align: left;
