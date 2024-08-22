@@ -42,16 +42,39 @@ h1 {
 }
 
 @media (max-width: 600px) {
+    .profile-container {
+        padding: 15px;
+    }
+    
     .profile-image {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .gradient-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
         font-size: 16px;
+    }
+
+    .gradient-text {
+        font-size: 12px;
     }
 }
